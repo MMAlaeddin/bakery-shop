@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Shop.Models
 {
-    public class Bread
+  public class Bread
   {
     public int BreadAmount { get; set; }
     public int BreadPrice { get; set; }

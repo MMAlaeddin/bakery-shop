@@ -6,9 +6,9 @@ namespace Shop
 {
   class Program
   {
-    static void Main()
+    public static void Main()
     {
-      Console.WriteLine("Welcome to the Bakery! Would you like some bread?");
+      Console.WriteLine("Welcome to the Bakery! Would you like to order [bread] or [pastries]?");
       string userResponse = Console.ReadLine().ToLower();
     }
   }
