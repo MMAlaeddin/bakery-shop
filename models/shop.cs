@@ -15,9 +15,9 @@ namespace Shop.Models
     }
     public int BreadAmount(int amount, int price)
     {
-    if (amount == 2 || amount == 3)
+    if (Amount == 2 || Amount == 3)
       {
-      price += 5;
+      Price += 5;
       }
     }
   }
