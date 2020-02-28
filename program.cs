@@ -17,7 +17,7 @@ namespace Shop
         int breadOrder = int.Parse(Console.ReadLine());
         Bread myBread = new Bread(breadOrder);
         myBread.TheBreadAmount(breadOrder);
-        Console.WriteLine("cost is " + myBread.BreadPrice);
+        Console.WriteLine("Your total cost is " + myBread.BreadPrice);
       }
       else if (userResponse.Contains("pastries"))
       {
@@ -25,7 +25,7 @@ namespace Shop
         int pastryOrder = int.Parse(Console.ReadLine());
         Pastry myPastry = new Pastry(pastryOrder);
         myPastry.ThePastryAmount(pastryOrder);
-        Console.WriteLine("cost is " + myPastry.PastryPrice);
+        Console.WriteLine("Your total cost is " + myPastry.PastryPrice);
       }
     }
   }

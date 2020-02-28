@@ -8,6 +8,16 @@
 
 This is an application that allows the user to order baked goods through the console.  You select the type of baked goods you'd like, then enter an amount to get your final cost! 
 
+## Specs 
+* Behavior: User is prompted to choose between bread or        pastries.
+    * Input: bread
+    * Output: A follow up question for quantity of bread
+* Behavior: User is prompted to enter quantity of choice
+    * Input: 2
+    * Output: "Your total cost is 10"
+
+
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
