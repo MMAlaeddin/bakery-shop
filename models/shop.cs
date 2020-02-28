@@ -19,6 +19,10 @@ namespace Shop.Models
       {
       BreadPrice = 10;
       }
+      else if (BreadAmount == 4 || BreadAmount == 6)
+      {
+        BreadPrice = 15;
+      }
     }
   }
   public class Pastry
