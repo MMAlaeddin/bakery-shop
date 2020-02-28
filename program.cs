@@ -12,8 +12,10 @@ namespace Shop
       string userResponse = Console.ReadLine().ToLower();
       if (userResponse.Contains("bread"))
       {
+        Bread myBread = new Bread (int breadAmount);
         Console.WriteLine("How much bread would you like?");
         int breadOrder = int.Parse(Console.ReadLine());
+        
       }
     }
   }
