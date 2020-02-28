@@ -13,11 +13,11 @@ namespace Shop.Models
       Amount = amount;
       Price = 5;   
     }
-    public int BreadAmount(int amount, int price)
+    public void BreadAmount(int amount, int price)
     {
     if (Amount == 2 || Amount == 3)
       {
-      Price += 5;
+      Price += 10;
       }
     }
   }
