@@ -10,12 +10,14 @@ namespace Shop
     {
       Console.WriteLine("Welcome to the Bakery! Would you like to order [bread] or [pastries]?");
       string userResponse = Console.ReadLine().ToLower();
+
       if (userResponse.Contains("bread"))
       {
-        Bread myBread = new Bread (int breadAmount);
         Console.WriteLine("How much bread would you like?");
         int breadOrder = int.Parse(Console.ReadLine());
-        
+        Bread myBread = new Bread(breadOrder);
+        myBread.TheBreadAmount(breadOrder);
+        Console.WriteLine("cost is " + myBread.BreadPrice);
       }
     }
   }

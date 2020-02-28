@@ -8,16 +8,16 @@ namespace Shop.Models
     public int BreadAmount { get; set; }
     public int BreadPrice { get; set; }
 
-    public Bread(int breadAmount, int breadPrice)
+    public Bread(int breadAmount)
     {
       BreadAmount = breadAmount;
-      BreadPrice = 5;   
+      BreadPrice = 5 * breadAmount;   
     }
     public void TheBreadAmount(int breadAmount)
     {
     if (BreadAmount == 2 || BreadAmount == 3)
       {
-      BreadPrice += 10;
+      BreadPrice += 5;
       }
     }
   }
