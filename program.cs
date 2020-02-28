@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Models;
+using Shop.Models;
 
 namespace Shop
 {
@@ -8,7 +8,8 @@ namespace Shop
   {
     static void Main()
     {
-      
+      Console.WriteLine("Welcome to the Bakery! Would you like some bread, a pastry or both?");
+      string userResponse = Console.ReadLine().ToLower();
     }
   }
 }
