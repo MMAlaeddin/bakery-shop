@@ -25,5 +25,18 @@ namespace Shop.Models
   {
     public int PastryAmount { get; set; }
     public int PastryPrice { get; set; }
+
+    public Pastry(int pastryAmount, int pastryPrice)
+    {
+      PastryAmount = pastryAmount;
+      PastryPrice = 2;
+    }
+    public void ThePastryAmount(int pastryAmount, int pastryPrice)
+    {
+      if (PastryAmount == 3)
+      {
+        PastryPrice += 3;
+      }
+    }
   }
 }
