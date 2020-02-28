@@ -35,7 +35,7 @@ namespace Shop.Models
     {
       if (PastryAmount == 3)
       {
-        PastryPrice += 3;
+        PastryPrice = 5;
       }
     }
   }
