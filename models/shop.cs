@@ -16,8 +16,8 @@ namespace Shop.Models
     public void TheBreadAmount(int breadAmount)
     {
     if (BreadAmount == 2 || BreadAmount == 3)
-      {
-      BreadPrice = 10;
+    {
+    BreadPrice = 10;
       }
       else if (BreadAmount == 4 || BreadAmount == 6)
       {
@@ -40,6 +40,10 @@ namespace Shop.Models
       if (PastryAmount == 3)
       {
         PastryPrice = 5;
+        }
+        else if (PastryAmount == 4 || PastryAmount == 6)
+        {
+        PastryPrice = 6;
       }
     }
   }
