@@ -11,17 +11,13 @@ namespace Shop.Models
     public Bread(int amount, int price)
     {
       Amount = amount;
-      Price = price;   
+      Price = 5;   
     }
-    public int GetAmount(int amount, int price)
+    public int BreadAmount(int amount, int price)
     {
-      if (amount == 1)
+    if (amount == 2 || amount == 3)
       {
-        price == 5;
-      }
-      else if (amount == 2 || amount == 3)
-      {
-      return 10;
+      price += 5;
       }
     }
   }
