@@ -13,16 +13,16 @@ namespace Shop.Models
       Amount = amount;
       Price = price;   
     }
-    public int GetAmount(int amount)
+    public int GetAmount(int amount, int price)
     {
       if (amount == 1)
       {
-        return 5;
+        price == 5;
       }
-        else if (amount == 2 || amount == 3)
-          {
-            return 10;
-          }
-        }
+      else if (amount == 2 || amount == 3)
+      {
+      return 10;
       }
     }
+  }
+}
