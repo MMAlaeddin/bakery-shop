@@ -17,7 +17,7 @@ namespace Shop.Models
     {
     if (BreadAmount == 2 || BreadAmount == 3)
       {
-      BreadPrice += 5;
+      BreadPrice = 10;
       }
     }
   }
