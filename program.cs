@@ -13,8 +13,6 @@ namespace Shop
       if (userResponse.Contains("bread"))
       {
         Console.WriteLine("How much bread would you like?");
-        // int orderBread = Console.ReadLine();
-        // Console.WriteLine("Your total is ");
       }
     }
   }
