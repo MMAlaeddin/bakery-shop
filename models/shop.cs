@@ -5,20 +5,25 @@ namespace Shop.Models
 {
     public class Bread
   {
-    public int Amount { get; set; }
-    public int Price { get; set; }
+    public int BreadAmount { get; set; }
+    public int BreadPrice { get; set; }
 
-    public Bread(int amount, int price)
+    public Bread(int breadAmount, int breadPrice)
     {
-      Amount = amount;
-      Price = 5;   
+      BreadAmount = breadAmount;
+      BreadPrice = 5;   
     }
-    public void BreadAmount(int amount, int price)
+    public void TheBreadAmount(int breadAmount, int breadPrice)
     {
-    if (Amount == 2 || Amount == 3)
+    if (BreadAmount == 2 || BreadAmount == 3)
       {
-      Price += 10;
+      BreadPrice += 10;
       }
     }
+  }
+  public class Pastry
+  {
+    public int PastryAmount { get; set; }
+    public int PastryPrice { get; set; }
   }
 }
