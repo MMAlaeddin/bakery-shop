@@ -8,7 +8,7 @@ namespace Shop
   {
     public static void Main()
     {
-      Console.WriteLine("Welcome to the Bakery! Would you like to order [bread] or [pastries]?");
+      Console.WriteLine("Welcome to the Bakery! Would you like to order [bread] or [pastries] or [both]?");
       string userResponse = Console.ReadLine().ToLower();
 
       if (userResponse.Contains("bread"))
@@ -26,6 +26,18 @@ namespace Shop
         Pastry myPastry = new Pastry(pastryOrder);
         myPastry.ThePastryAmount(pastryOrder);
         Console.WriteLine("Your total cost is " + "$" + myPastry.PastryPrice);
+      }
+            else if (userResponse.Contains("both"))
+      {
+        Console.WriteLine("How many pastries would you like?");
+        int pastryOrder = int.Parse(Console.ReadLine());
+        Pastry myPastry = new Pastry(pastryOrder);
+        myPastry.ThePastryAmount(pastryOrder);
+        Console.WriteLine("How much bread would you like?");
+        int breadOrder = int.Parse(Console.ReadLine());
+        Bread myBread = new Bread(breadOrder);
+        myBread.TheBreadAmount(breadOrder);
+        Console.WriteLine("Your total cost is " + "$" + myPastry.PastryPrice + myBread.BreadPrice);
       }
     }
   }
