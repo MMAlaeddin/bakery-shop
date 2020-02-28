@@ -19,6 +19,14 @@ namespace Shop
         myBread.TheBreadAmount(breadOrder);
         Console.WriteLine("cost is " + myBread.BreadPrice);
       }
+      else if (userResponse.Contains("pastries"))
+      {
+      Console.WriteLine("How many pastries would you like?");
+      int pastryOrder = int.Parse(Console.ReadLine());
+      Pastry myPastry = new Pastry(pastryOrder);
+      myPastry.ThePastryAmount(pastryOrder);
+      Console.WriteLine("cost is " + myPastry.PastryPrice);
+      }
     }
   }
 }

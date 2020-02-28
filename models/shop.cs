@@ -26,12 +26,12 @@ namespace Shop.Models
     public int PastryAmount { get; set; }
     public int PastryPrice { get; set; }
 
-    public Pastry(int pastryAmount, int pastryPrice)
+    public Pastry(int pastryAmount)
     {
       PastryAmount = pastryAmount;
-      PastryPrice = 2;
+      PastryPrice = 2 * pastryAmount;
     }
-    public void ThePastryAmount(int pastryAmount, int pastryPrice)
+    public void ThePastryAmount(int pastryAmount)
     {
       if (PastryAmount == 3)
       {
