@@ -8,7 +8,7 @@ namespace Shop
   {
     static void Main()
     {
-      Console.WriteLine("Welcome to the Bakery! Would you like some bread, a pastry or both?");
+      Console.WriteLine("Welcome to the Bakery! Would you like some bread?");
       string userResponse = Console.ReadLine().ToLower();
     }
   }
