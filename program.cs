@@ -20,6 +20,7 @@ namespace Shop
         Bread myBread = new Bread(breadOrder);
         myBread.TheBreadAmount(breadOrder);
         Console.WriteLine("Your total cost is " + "$" + myBread.BreadPrice);
+        Console.WriteLine("Thank your for your business!");
       }
       else if (userResponse.Contains("pastries"))
       {
@@ -28,6 +29,11 @@ namespace Shop
         Pastry myPastry = new Pastry(pastryOrder);
         myPastry.ThePastryAmount(pastryOrder);
         Console.WriteLine("Your total cost is " + "$" + myPastry.PastryPrice);
+        Console.WriteLine("Thank your for your business!");
+      }
+      else if(userResponse != "bread" || userResponse != "pastries")
+      {
+      Console.WriteLine("Get out of here!");
       }
     }
   }
