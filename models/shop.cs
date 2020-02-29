@@ -17,11 +17,11 @@ namespace Shop.Models
     {
     if (BreadAmount == 2 || BreadAmount == 3)
     {
-    BreadPrice = 10;
-      }
-      else if (BreadAmount == 4 || BreadAmount == 6)
+      BreadPrice = 10;
+    }
+    else if (BreadAmount == 4 || BreadAmount == 6)
       {
-        BreadPrice = 15;
+      BreadPrice = 15;
       }
     }
   }
