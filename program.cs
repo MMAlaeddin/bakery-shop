@@ -1,4 +1,6 @@
 using System;
+using System.Drawing;
+using Console = Colorful.Console;
 using System.Collections.Generic;
 using Shop.Models;
 
@@ -8,7 +10,7 @@ namespace Shop
   {
     public static void Main()
     {
-      Console.WriteLine("Welcome to the Bakery! Would you like to order [bread] or [pastries]?");
+      Console.WriteLine("Welcome to the Bakery! Would you like to order [bread] or [pastries]?", Color.Pink);
       string userResponse = Console.ReadLine().ToLower();
 
       if (userResponse.Contains("bread"))
