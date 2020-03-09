@@ -10,18 +10,13 @@ namespace Shop.Models
 
     public Bread(int breadAmount)
     {
-      BreadAmount = breadAmount;
-      BreadPrice = 5 * breadAmount;   
+      BreadAmount = breadAmount;  
     }
-    public void TheBreadAmount(int breadAmount)
+    public int TheBreadAmount()
     {
-      if (BreadAmount == 2 || BreadAmount == 3)
+      int BreadPrice = (BreadAmount - (BreadAmount / 3)) * 5;
       {
-        BreadPrice = 10;
-      }
-      else if (BreadAmount == 4 || BreadAmount == 6)
-      {
-        BreadPrice = 15;
+        return BreadPrice;
       }
     }
   }
@@ -33,17 +28,12 @@ namespace Shop.Models
     public Pastry(int pastryAmount)
     {
       PastryAmount = pastryAmount;
-      PastryPrice = 2 * pastryAmount;
     }
-    public void ThePastryAmount(int pastryAmount)
+    public int ThePastryAmount()
     {
-      if (PastryAmount == 3)
+      PastryPrice = (PastryAmount - (PastryAmount / 3)) * 5;
       {
-        PastryPrice = 5;
-        }
-        else if (PastryAmount == 4 || PastryAmount == 6)
-        {
-        PastryPrice = 6;
+        return PastryPrice;
       }
     }
   }
