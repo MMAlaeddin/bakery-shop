@@ -18,7 +18,7 @@ namespace Shop
         Console.WriteLine("How much bread would you like?");
         int breadOrder = int.Parse(Console.ReadLine());
         Bread myBread = new Bread(breadOrder);
-        myBread.TheBreadAmount(breadOrder);
+        myBread.TheBreadAmount();
         Console.WriteLine("Your total cost is " + "$" + myBread.BreadPrice);
         Console.WriteLine("Thank your for your business!");
       }
@@ -27,7 +27,7 @@ namespace Shop
         Console.WriteLine("How many pastries would you like?");
         int pastryOrder = int.Parse(Console.ReadLine());
         Pastry myPastry = new Pastry(pastryOrder);
-        myPastry.ThePastryAmount(pastryOrder);
+        myPastry.ThePastryAmount();
         Console.WriteLine("Your total cost is " + "$" + myPastry.PastryPrice);
         Console.WriteLine("Thank your for your business!");
       }

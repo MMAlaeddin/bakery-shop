@@ -14,7 +14,7 @@ namespace Shop.Models
     }
     public int TheBreadAmount()
     {
-      int BreadPrice = (BreadAmount - (BreadAmount / 3)) * 5;
+      BreadPrice = (BreadAmount - (BreadAmount / 3)) * 5;
       {
         return BreadPrice;
       }
@@ -31,7 +31,7 @@ namespace Shop.Models
     }
     public int ThePastryAmount()
     {
-      PastryPrice = (PastryAmount - (PastryAmount / 3)) * 5;
+      PastryPrice = (PastryAmount * 2) - (PastryAmount / 3);
       {
         return PastryPrice;
       }
